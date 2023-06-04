@@ -6,13 +6,24 @@
 //
 
 import Foundation
+import Firebase
+
 class LoginViewViewModel:ObservableObject{
     @Published var email = ""
     @Published var password = ""
     @Published var errorMessage = ""
+    
     init() {}
     
     func Login(){
+        guard validate() else {
+            return
+        }
+        Auth.auth().signIn(withEmail: email, password: password)
+      
+    }
+    
+    private func validate() -> Bool {
         guard !email.trimmingCharacters(
             in: .whitespaces).isEmpty ,
               !password.trimmingCharacters(
@@ -20,7 +31,7 @@ class LoginViewViewModel:ObservableObject{
                 
         else{
            errorMessage = "Error, fill in all fields"
-            return
+            return false
         }
         
         guard email.contains("@") &&
@@ -28,13 +39,8 @@ class LoginViewViewModel:ObservableObject{
         
         else{
         errorMessage = "Is this realy your email?!"
-            return
+            return false
         }
-        
-        print("omgwtf")
-    }
-    
-    func validate(){
-        
+        return true
     }
 }

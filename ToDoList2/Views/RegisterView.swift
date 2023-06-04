@@ -8,9 +8,7 @@
 import SwiftUI
 
 struct RegisterView: View {
-    @State var name = ""
-    @State var mail = ""
-    @State var password = ""
+@StateObject var viewModel = RegisterViewViewModel()
 
     var body: some View {
         HeaderView(
@@ -20,19 +18,19 @@ struct RegisterView: View {
         
         Form{
             TextField("Full Name",
-                      text: $name)
+                      text: $viewModel.name)
             
                 .textFieldStyle(DefaultTextFieldStyle())
                 .autocorrectionDisabled()
             TextField("E-Mail",
-                      text: $mail)
+                      text: $viewModel.mail)
             
                 .textFieldStyle(DefaultTextFieldStyle())
                 .autocorrectionDisabled()
                 .autocapitalization(.none)
             
             SecureField("Password",
-                        text: $password)
+                        text: $viewModel.password)
             
                 .textFieldStyle(DefaultTextFieldStyle())
             FormButtonView(color: .purple){

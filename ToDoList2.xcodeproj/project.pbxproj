@@ -32,6 +32,7 @@
 		6E72C46E2A23B2EE00CF6660 /* RegisterViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E72C46D2A23B2EE00CF6660 /* RegisterViewViewModel.swift */; };
 		6E72C4702A25364100CF6660 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E72C46F2A25364100CF6660 /* HeaderView.swift */; };
 		6E72C4722A29288800CF6660 /* FormButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E72C4712A29288800CF6660 /* FormButtonView.swift */; };
+		6EE528E72A2D084D0099D0F1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE528E62A2D084D0099D0F1 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		6E72C46D2A23B2EE00CF6660 /* RegisterViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewViewModel.swift; sourceTree = "<group>"; };
 		6E72C46F2A25364100CF6660 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		6E72C4712A29288800CF6660 /* FormButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormButtonView.swift; sourceTree = "<group>"; };
+		6EE528E62A2D084D0099D0F1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 				6E72C44B2A23A01A00CF6660 /* GoogleService-Info.plist */,
 				6E72C4362A239D3800CF6660 /* ToDoList2App.swift */,
 				6E72C43A2A239D3900CF6660 /* Assets.xcassets */,
+				6EE528E62A2D084D0099D0F1 /* Extensions.swift */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 				6E72C45E2A23B1CA00CF6660 /* ToDoItem.swift in Sources */,
 				6E72C4392A239D3800CF6660 /* MainView.swift in Sources */,
 				6E72C4522A23AE1000CF6660 /* ToDoListItemView.swift in Sources */,
+				6EE528E72A2D084D0099D0F1 /* Extensions.swift in Sources */,
 				6E72C4642A23B26C00CF6660 /* ToDoLIstItemViewViewModel.swift in Sources */,
 				6E72C45C2A23B1B600CF6660 /* User.swift in Sources */,
 				6E72C4622A23B23800CF6660 /* ProfileViewViewModel.swift in Sources */,
