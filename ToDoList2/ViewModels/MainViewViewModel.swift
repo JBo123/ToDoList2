@@ -12,10 +12,10 @@ class MainViewViewModel: ObservableObject{
     
     init(){
         let handler = Auth.auth().addStateDidChangeListener{_, user in
-            self.currentUserId user?.uid ?? ""
+            self.currentUserId = user?.uid ?? ""
             
         }
-    }
+    } 
     
     public var isSignedIn: Bool{
         return Auth.auth().currentUser != nil
